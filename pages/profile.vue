@@ -13,7 +13,8 @@ export default {
     return { user }
   },
   // Authentification guard
-  middleware: ['auth']
+  middleware: ['auth'],
+  layout: 'authorizedLayout'
 }
 </script>
 
