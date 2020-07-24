@@ -22,6 +22,9 @@ export const state = () => ({
 export const getters = {
   getUsersData: state => state.usersData,
   getActiveUserData: state => state.usersData.find(u => u.id === state.activeUserID),
+  // Important to compare id with null because 
+  // coercion to boolean will return false in case of id = 0
+  getIsUserLoggedIn: state => state.activeUserID !== null
 }
 
 export const actions = {
