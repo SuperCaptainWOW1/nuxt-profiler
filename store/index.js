@@ -5,16 +5,22 @@ export const state = () => ({
       id: 0,
       login: 'Oleg',
       password: 'yaoleg',
+      email: 'oleg@gmail.com',
+      avatar: '/0.jpg'
     },
     {
       id: 1,
       login: 'neOleg',
       password: 'yaneoleg',
+      email: 'neoleg@yahoo.com',
+      avatar: '/1.jpg'
     },
     {
       id: 2,
       login: 'Olga',
       password: 'yaolga',
+      email: 'olga@yandex.ru',
+      avatar: '/2.jpg'
     }
   ]
 })

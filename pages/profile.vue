@@ -1,6 +1,6 @@
 <template>
   <main>
-    {{ user }}
+    <ProfileCard :user="user" />
   </main>
 </template>
 
@@ -12,7 +12,8 @@ export default {
 
     return { user }
   },
-  middleware: ['auth'],
+  // Authentification guard
+  middleware: ['auth']
 }
 </script>
 
