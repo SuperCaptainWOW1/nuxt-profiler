@@ -36,11 +36,17 @@ export const getters = {
 export const actions = {
   setActiveUserID ({ commit }, id) {
     commit('SET_ACTIVE_USER_ID', id)
+  },
+  logout ({ commit }) {
+    commit('REMOVE_ACTIVE_USER_ID')
   }
 }
 
 export const mutations = {
-  SET_ACTIVE_USER_ID(state, id) {
+  SET_ACTIVE_USER_ID (state, id) {
     state.activeUserID = id
+  },
+  REMOVE_ACTIVE_USER_ID (state) {
+    state.activeUserID = null
   }
 }

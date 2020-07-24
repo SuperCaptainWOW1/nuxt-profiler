@@ -3,7 +3,7 @@
     <v-container>
       <v-row class="align-center pb-3">
         <h1>Profile Viewer</h1>
-        <v-btn class="ml-auto" outlined>Logout</v-btn>
+        <v-btn class="ml-auto" outlined @click="logout">Logout</v-btn>
       </v-row>
 
       <v-divider class="mb-10" />
@@ -14,7 +14,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    logout() {
+      this.$store.dispatch('logout')
+      this.$router.push('/')
+    }
+  }
+}
 </script>
 
 <style>
