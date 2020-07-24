@@ -21,6 +21,7 @@ export const state = () => ({
 
 export const getters = {
   getUsersData: state => state.usersData,
+  getActiveUserData: state => state.usersData.find(u => u.id === state.activeUserID),
 }
 
 export const actions = {
