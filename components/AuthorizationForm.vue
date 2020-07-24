@@ -6,10 +6,11 @@
 
     <v-text-field v-model="password" label="Password" type="password" ></v-text-field>
 
-    <v-btn color="blue white--text" type="submit">Login</v-btn>
+    <v-btn color="deep-purple accent-4 white--text" type="submit">Login</v-btn>
 
     <v-snackbar
       v-model="snackbar"
+      color="deep-purple accent-3"
       :timeout="3000"
       bottom
     >
